@@ -1,6 +1,7 @@
-import HelloWorld from './components/HelloWorld';
 import Pessoas from './components/Pessoas';
 import List from './components/List';
+import Evento from './components/Evento';
+import Form from './components/Form';
 import './App.css';
 
 function App() {
@@ -15,8 +16,9 @@ function App() {
 
       {/* Utilizando uma props */}
       <Pessoas nome={name} idade={idade} email={email} />
-
-      <List/>
+      <List />
+      <Evento />
+      <Form />
     </div>
   );
 }
