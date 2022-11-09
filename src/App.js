@@ -1,5 +1,6 @@
 import HelloWorld from './components/HelloWorld';
 import Pessoas from './components/Pessoas';
+import List from './components/List';
 import './App.css';
 
 function App() {
@@ -11,7 +12,11 @@ function App() {
     <div className="App">
       <h1>Olá mundo</h1>
       <p>Meu primeiro App!</p>
+
+      {/* Utilizando uma props */}
       <Pessoas nome={name} idade={idade} email={email} />
+
+      <List/>
     </div>
   );
 }
